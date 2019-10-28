@@ -64,14 +64,12 @@
 	  	vid.pause();
 	} 
 	function slowSpeed() {
-        vid.playbackRate = 0.5; 
-        var speed = this.playbackRate;
-        console.log("Decrease speed");
+        vid.playbackRate = vid.playbackRate * 0.5;
+        console.log("Speed is " + vid.playbackRate);
 	} 
 	function increaseSpeed() {
-		vid.playbackRate = 2.0; 
-        var speed = vid.playbackRate;
-        console.log("Increase speed");
+		vid.playbackRate = vid.playbackRate * 2.0;
+        console.log("Speed is " + vid.playbackRate);
 	} 
 	function mute() {
         var button = document.getElementById("mute");
